@@ -7,5 +7,6 @@ class HomeContract {
     }
 
     interface UserActionListener{
+       fun loadProduct()
     }
 }

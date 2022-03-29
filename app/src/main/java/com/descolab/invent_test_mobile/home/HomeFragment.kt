@@ -6,11 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.descolab.invent_test_mobile.R
-import com.descolab.invent_test_mobile.service.response.ArticlesItem
-import com.descolab.invent_test_mobile.service.response.Category
-import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : Fragment(), HomeContract.View {
     private var progressDialog : ProgressDialog? = null
@@ -29,8 +25,9 @@ class HomeFragment : Fragment(), HomeContract.View {
         progressDialog = ProgressDialog(context)
         progressDialog?.setMessage("Loading...")
         progressDialog?.setCancelable(false)
-
         mActionListener = context?.let { HomePresenter(it, this) }
+        mActionListener?.loadProduct()
+
         setupRv()
     }
 

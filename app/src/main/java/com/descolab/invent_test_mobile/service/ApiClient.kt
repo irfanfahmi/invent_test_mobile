@@ -16,14 +16,14 @@ class ApiClient {
     companion object {
 
         @JvmStatic
-        val BASE_URL = "https://newsapi.org/v2/"
+        val BASE_URL = "https://invent-integrasi.com/"
         @JvmStatic
-        val URL_API = BASE_URL + "api/"
+        val URL_API = BASE_URL + "test_core/v1/"
 
         @JvmStatic
         fun getClient(): Retrofit {
             val retrofit = Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(URL_API)
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(getUnsafeOkHttpClient())
                 .build()
