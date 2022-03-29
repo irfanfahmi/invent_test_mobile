@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.descolab.invent_test_mobile.R
 import com.descolab.invent_test_mobile.service.db.model.ProductModel
 
-import kotlinx.android.synthetic.main.item_produk.view.*
+import kotlinx.android.synthetic.main.item_product.view.*
 
 class ProductAdapter(private val mContext: Context,
                      val mItems: List<ProductModel>,

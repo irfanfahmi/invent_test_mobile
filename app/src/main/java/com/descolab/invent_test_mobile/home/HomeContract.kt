@@ -11,5 +11,6 @@ class HomeContract {
 
     interface UserActionListener{
        fun loadProduct()
+       fun searchProduct(text: String)
     }
 }

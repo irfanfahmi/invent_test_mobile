@@ -43,4 +43,9 @@ class HomePresenter (val context: Context,
             }
         })
     }
+
+    override fun searchProduct(text: String) {
+        db = ProductDatabase.getInstance(context) as ProductDatabase
+        mView.showListProduct(db.productDao().loadAllProductSearch(text))
+    }
 }

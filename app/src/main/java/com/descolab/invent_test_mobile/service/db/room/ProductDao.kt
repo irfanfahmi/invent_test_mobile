@@ -9,6 +9,15 @@ interface ProductDao {
     @Query("SELECT * FROM product_table")
     fun loadAllProduct(): List<ProductModel>
 
+    @Query("SELECT * FROM product_table ORDER BY product_name ASC")
+    fun loadAllProductSortedByNameProductAsc(): List<ProductModel>
+
+    @Query("SELECT * FROM product_table ORDER BY price ASC")
+    fun loadAllProductSortedByPriceProductAsc(): List<ProductModel>
+
+    @Query("SELECT * FROM product_table WHERE product_name  LIKE '%' || :text || '%' OR price LIKE '%' || :text || '%'")
+    fun loadAllProductSearch(text: String): List<ProductModel>
+
     @Insert
     fun addTask(myTask: ProductModel)
 
