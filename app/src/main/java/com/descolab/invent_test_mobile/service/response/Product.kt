@@ -41,6 +41,6 @@ data class Product(
     val productName: String? = null,
 
     @field:SerializedName("branch_id")
-    val branch_id: String? = null
+    val branchId: String? = null
 
 ) : Parcelable

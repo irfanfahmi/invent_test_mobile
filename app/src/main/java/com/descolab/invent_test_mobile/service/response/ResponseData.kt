@@ -1,10 +1,11 @@
 package com.descolab.invent_test_mobile.service.response
 
 import android.os.Parcelable
+import com.descolab.invent_test_mobile.service.db.model.ProductModel
 import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
-@Parcelize
+
 data class ResponseData<T>(
 
 	@field:SerializedName("status_code")
@@ -17,7 +18,7 @@ data class ResponseData<T>(
 	val statusMessageEng: String? = null,
 
 	@field:SerializedName("value")
-	val value: List<Product?>? = null
-) : Parcelable
+	val value: List<ProductModel>? = null
+)
 
 
