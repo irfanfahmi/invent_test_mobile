@@ -5,7 +5,8 @@
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/drawable/ic_bacadulu_com.xml" value="0.2203125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/drawable/ic_plus.xml" value="0.2203125" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/fragment_home.xml" value="0.14" />
       </map>
     </option>
   </component>
