@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.descolab.invent_test_mobile.R
+import com.descolab.invent_test_mobile.helper.Tools
+import com.descolab.invent_test_mobile.helper.Utils
 import com.descolab.invent_test_mobile.service.db.model.ProductModel
 
 import kotlinx.android.synthetic.main.item_product.view.*
@@ -41,7 +43,8 @@ class ProductAdapter(private val mContext: Context,
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(data: ProductModel) {
             itemView.tvProductName.text = data.productName.toString()
-            itemView.tvProductPrice.text = data.price
+            itemView.tvProductPrice.text = data.price?.let { Tools.formatRupiah(it) }
+
 //            var baseUrl = mContext.getString(R.string.baseUrl)+ data.fotoProduk.toString()
 //            Tools.displayImageOriginal(mContext,itemView.ivImageProduk,baseUrl)
             itemView.setOnClickListener {

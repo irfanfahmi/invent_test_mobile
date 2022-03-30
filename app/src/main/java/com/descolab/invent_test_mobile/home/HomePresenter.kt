@@ -48,4 +48,12 @@ class HomePresenter (val context: Context,
         db = ProductDatabase.getInstance(context) as ProductDatabase
         mView.showListProduct(db.productDao().loadAllProductSearch(text))
     }
+
+    override fun sortingProduct(text: String) {
+        db = ProductDatabase.getInstance(context) as ProductDatabase
+        if (text == "Name Product")
+        mView.showListProduct(db.productDao().loadAllProductSortedByNameProductAsc())
+        else mView.showListProduct(db.productDao().loadAllProductSortedByPriceProductAsc())
+
+    }
 }

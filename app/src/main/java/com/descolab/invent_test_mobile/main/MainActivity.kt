@@ -39,12 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         App.get().sharedPreferences1000
 
-        setSupportActionBar(toolbarid)
-        // Now get the support action bar
-        val actionBar = supportActionBar
 
-        // Set toolbar title/app title
-        actionBar!!.title = ""
 
 
         navigation.enableShiftingMode(false)

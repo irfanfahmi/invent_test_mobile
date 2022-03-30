@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import com.descolab.invent_test_mobile.R
 import com.descolab.invent_test_mobile.service.db.model.ProductModel
 import com.descolab.invent_test_mobile.service.db.room.ProductDatabase
@@ -48,6 +49,24 @@ class HomeFragment : Fragment(), HomeContract.View, ProductAdapter.ListProdukLis
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
             }
         })
+
+        etSort.setOnClickListener {
+            displaySort(it)
+        }
+
+    }
+
+    fun displaySort(v: View){
+        val array = arrayOf("Name Product","Price Product")
+        val builder = context?.let { androidx.appcompat.app.AlertDialog.Builder(it) }
+        builder?.setTitle("Sort By")
+        builder?.setSingleChoiceItems( array, -1 ) {
+                dialogInterface, i ->
+            (v as EditText).setText(array[i])
+            mActionListener?.sortingProduct(array[i])
+            dialogInterface.dismiss()
+        }
+        builder?.show()
     }
 
 

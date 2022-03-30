@@ -12,6 +12,7 @@ import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.target.BitmapImageViewTarget
+import java.text.NumberFormat
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -114,6 +115,13 @@ class Tools {
                 )
             }
 
+        }
+
+        @JvmStatic
+        fun formatRupiah(number: Double): String? {
+            val localeID = Locale("in", "ID")
+            val formatRupiah = NumberFormat.getCurrencyInstance(localeID)
+            return formatRupiah.format(number)
         }
     }
 }

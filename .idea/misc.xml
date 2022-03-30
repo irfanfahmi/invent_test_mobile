@@ -5,13 +5,18 @@
       <map>
         <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/drawable/bg_edittext_focused.xml" value="0.11851851851851852" />
         <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/drawable/bg_edittext_normal.xml" value="0.11851851851851852" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/drawable/bg_edittext_spinner.xml" value="0.2203125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/drawable/edittext_rounded.xml" value="0.11851851851851852" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/drawable/header_toolbar_bg.xml" value="0.2203125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/drawable/ic_bacadulu_com.xml" value="0.2203125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/drawable/ic_dropdown.xml" value="0.11851851851851852" />
         <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/drawable/ic_plus.xml" value="0.2203125" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/activity_main.xml" value="0.5" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/fragment_home.xml" value="0.14" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/item_product.xml" value="0.14" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/font/roboto.xml" value="0.234375" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/activity_main.xml" value="0.1259259259259259" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/fragment_category.xml" value="0.18" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/item_product.xml" value="0.22" />
         <entry key="..\:/Users/user/AndroidStudioProjects/InventoryApp/app/src/main/res/layout/item_produk.xml" value="0.5" />
       </map>
     </option>

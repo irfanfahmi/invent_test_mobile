@@ -38,7 +38,7 @@ data class ProductModel(
 
     @field:SerializedName("price")
     @ColumnInfo(name = "price")
-    var price: String?,
+    var price: Double?,
 
     @field:SerializedName("product_weight_uom")
     @ColumnInfo(name = "product_weight_uom")

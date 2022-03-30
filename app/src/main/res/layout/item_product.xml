@@ -5,23 +5,51 @@
     android:layout_margin="4dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="@dimen/margin_default"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivImageProduct"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_placeholder"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
     <TextView
         android:id="@+id/tvProductName"
-        style="@style/TextAppearance.AppCompat.Medium"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_default"
+        android:fontFamily="@font/gilroy_semibold"
         android:maxLines="2"
         android:padding="2dp"
-        android:text="Produk 1"
+        android:text=""
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cvBtn"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvProductPrice"
-        style="@style/TextAppearance.AppCompat.Medium"
+        android:fontFamily="@font/gilroy_semibold"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_default"
@@ -29,11 +57,11 @@
         android:layout_marginBottom="@dimen/margin_default"
         android:maxLines="2"
         android:padding="2dp"
-        android:text="2333"
+        android:text=""
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cvBtn"
         app:layout_constraintTop_toBottomOf="@+id/tvProductName" />
 
 
